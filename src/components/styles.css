@@ -1,0 +1,411 @@
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background: #ffffff31;
+    box-shadow: 0px 4px 12px 0px rgba(18, 18, 18, 0.03);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    border: 1px solid #ffffff;
+    z-index: 999;
+}
+.header-content{
+    height: inherit;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdowncaret{
+    display: none;
+}
+
+.header-nav-links nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-nav-links nav .nav-links{
+    cursor: pointer;
+}
+
+.header-nav-links button{
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#menu:hover{
+    cursor: pointer;
+    width: 99%;
+}
+  
+.thedropdown{
+    background: #ffffffe0;
+    box-shadow: 0px 4px 12px 0px rgba(18, 18, 18, 0.04);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    text-align: center;
+    font-size: 32px;
+}
+.thedropdown a{
+    color: #000000;
+    text-decoration: none;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text{
+    flex: 2;
+}
+.hero-text h1{
+    font-size: 70px;
+    margin: 0px;
+}
+.hero-text p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.hero-text .available-ping{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    animation: ping infinite 1.5s ease-in-out;
+}
+
+@keyframes ping {
+    from {
+        background: radial-gradient(#1c8119, #1c8119,#fff, #fff, #fff, #fff);
+    }
+    to {
+        background: radial-gradient(#1c8119, #1c8119, #1c81193d,#1c811918, #1c811918,#1c8119);
+    }
+}
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+}
+.hero-image .image-div{
+    width: 280px;
+    height: 320px;
+    background: #d8d8d8;
+    position: relative;
+
+}
+
+.hero-image .image-div .outer-img{
+    width: 280px;
+    height: 320px;
+    position: absolute;
+    background: #ffffff;
+    right: 40px;
+    bottom: 40px;
+}
+
+.hero-image .image-div img{
+    width: 266px;
+    height: 306px;
+    padding: 7px 7px;
+    
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.work{
+    margin: 60px auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.work-head h4{
+    display: inline;
+    background: #dddcdce0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.work-head p{
+    font-size: 21px;
+}
+.card {
+    display: flex;
+    margin: 40px 0 40px 0;
+    box-shadow: 2px 5px 10px rgba(18, 18, 18, 0.089);
+}
+
+/* Image on the left */
+.image-left {
+    flex-direction: row;
+}
+
+/* Image on the right */
+.image-right {
+    flex-direction: row-reverse;
+}
+
+.card .project-image {
+    flex: 1;
+    background-color: #d3d3d31a;
+    
+}
+
+.card .project-text {
+    flex: 1;
+    text-align: left;
+}
+.project-text ,.project-text-dets{
+    width: 90%;
+    margin: 0px auto;
+}
+.proj-tech{
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0px 10px 10px 0px;
+    
+}
+.proj-tech h{
+    background: #e9e8e8;
+    padding: 5px 25px;
+    border-radius: 15px;
+    font-weight: 400;
+}
+
+.project-image img {
+    width: 80%;
+    height: 300px;
+    border-radius: 8px;
+    margin: 40px auto;
+    transition: 0.6s ;
+}
+.project-image img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.6s ;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+.card {
+    flex-direction: column;
+}
+
+.card-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.skills{
+    margin: 50px auto;
+    text-align: center;
+}
+.skills-head h4{
+    display: inline;
+    background: #dddcdce0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.skills-head p{
+    font-size: 21px;
+}
+.skills-list{
+    padding-top: 30px;
+    display: flex;
+    gap: 90px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills-list .tech-design p{
+    margin-top: 5px;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.about{
+    margin: 60px auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.about-head h4{
+    display: inline;
+    background: #dddcdce0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.about-head p{
+    font-size: 21px;
+}
+.about-me-dets{
+    width: 80%;
+    margin: auto;
+}
+.about-me-dets p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.about-me-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.contact{
+    margin: 60px auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.contact-head h4{
+    display: inline;
+    background: #dddcdce0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-head p{
+    width: 48%;
+    margin: 20px auto;
+    font-size: 23px;
+}
+.contact-dets .conts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 70px;
+}
+.contact-dets .conts h1{
+    font-size: 40px;
+    color: #000000d3;
+}
+
+.conts .icon-cont{
+    position: relative;
+}
+.copy{
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    transform: translateX(-50%);
+    background-color: rgba(235, 235, 235, 0.623);
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 660px) {
+    .dropdowncaret{
+        display: block;
+    }
+    .header-nav-links{
+        display: none;
+    }
+    .thedropdown{
+        padding-bottom: 250px;
+    }
+    /*////////////////////////////////////////*/
+    .header-content{
+        padding: 0 20px;
+    }
+    .logo h1{
+        font-size: 23px;
+    }
+    
+    /*////////////////////////////////////////*/
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .hero-text p{
+        font-size: 16px;
+        opacity: 0.8;
+        text-align: justify;
+    }
+    .hero-image{
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .hero-image .image-div{
+        width: 320px;
+        height: 320px;
+    }
+    .hero-image .image-div .outer-img{
+        right: 20px;
+        bottom: 20px;
+    }
+    /*////////////////////////////////////////*/
+    .project-image img {
+        height: 200px;
+    }
+    /*////////////////////////////////////////*/
+    .about-me-dets{
+        width: 90%;
+    }
+    /*////////////////////////////////////////*/
+    .skills-list{
+        gap: 50px;
+        row-gap: 5px;
+    }
+    .skills-head p{
+        margin-bottom: 5px;
+    }
+    /*////////////////////////////////////////*/
+    .contact-head p{
+        width: 90%;
+        font-size: 18px;
+        color: #00000098;
+    }
+    .contact-dets .conts{
+        gap: 10px;
+        height: 50px;
+    }
+    .contact-dets .conts h1{
+        font-size: 18px;
+    }
+    .conts img{
+        height: 25px;
+    }
+}
