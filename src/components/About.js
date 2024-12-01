@@ -34,8 +34,8 @@ const About = () => {
                         <li>Full time freelancer</li>
                         <li>Avid learner</li>
                     </ul>
-                    One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
                 </div>
+                One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
             </div>
         </div>
     );

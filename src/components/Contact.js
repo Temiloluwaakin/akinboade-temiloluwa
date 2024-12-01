@@ -33,7 +33,12 @@ const Contact = () => {
 
             <div className='contact-dets'>
                 <div className='conts'>
-                    <img src={message} alt="message-icon"/>
+                    <img 
+                        src={message} 
+                        alt="message-icon"
+                        style={{cursor:'pointer'}}
+                        onClick={ () => window.location = 'mailto:akinboade12345@gmail.com'}
+                    />
                     <h1>{email}</h1>
                     <span className='icon-cont'>
                         <img 
@@ -51,7 +56,12 @@ const Contact = () => {
                 </div>
 
                 <div className='conts'>
-                    <img src={phone} alt="phone-icon"/>
+                    <img 
+                        src={phone} 
+                        alt="phone-icon"
+                        style={{cursor:'pointer'}}
+                        onClick={ () => window.location = 'callto:+2348069820002'}
+                    />
                     <h1>{phoneNo}</h1>
                     <span className='icon-cont'>
                         <img 
