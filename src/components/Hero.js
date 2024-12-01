@@ -10,10 +10,10 @@ const Hero = () => {
         <div className="hero">
             <div className="hero-text">
                 <h1>Hi, i'm Temiloluwa</h1>
-                <p>I'm a full stack developer (React.js & Node.js) with a focus on 
+                <p>I'm a full stack developer with a focus on 
                     creating (and occasionally designing) exceptional digital experiences
                     that are fast, accessible, visually appealing, and responsive. 
-                    Even though I have been creating web applications for over 7 years, 
+                    Even though I have been creating web applications for over 4 years, 
                     I still love it as if it was something new.
                 </p>
                 <p style={{display:'flex',gap:'10px',alignItems:'center'}}>

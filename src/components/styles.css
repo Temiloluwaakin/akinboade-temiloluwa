@@ -52,8 +52,12 @@
     -webkit-backdrop-filter: blur(80px);
     border: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 999;
-    text-align: center;
+    text-align: right;
     font-size: 32px;
+    padding: 30px;
+}
+.res-header{
+    padding: 10px;
 }
 .thedropdown a{
     color: #000000;
@@ -89,6 +93,7 @@
     width: 20px;
     border-radius: 50%;
     animation: ping infinite 1.5s ease-in-out;
+    -webkit-animation: ping infinite 1.5s ease-in-out;
 }
 
 @keyframes ping {
@@ -221,7 +226,8 @@
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/
 .skills{
-    margin: 50px auto;
+    margin: 60px auto;
+    padding-top: 100px;
     text-align: center;
 }
 .skills-head h4{
@@ -350,7 +356,6 @@
     .logo h1{
         font-size: 23px;
     }
-    
     /*////////////////////////////////////////*/
     .hero{
         flex-direction: column-reverse;
@@ -362,6 +367,7 @@
         font-size: 16px;
         opacity: 0.8;
         text-align: justify;
+        line-height: 25px;
     }
     .hero-image{
         justify-content: center;
@@ -377,14 +383,27 @@
         bottom: 20px;
     }
     /*////////////////////////////////////////*/
+    .work{
+        padding-top: 30px;
+    }
+    .card .project-image {
+        background-color: #d3d3d32a;
+        
+    }
     .project-image img {
         height: 200px;
     }
     /*////////////////////////////////////////*/
+    .about{
+        padding-top: 30px;
+    }
     .about-me-dets{
         width: 90%;
     }
     /*////////////////////////////////////////*/
+    .skills{
+        padding-top: 30px;
+    }
     .skills-list{
         gap: 50px;
         row-gap: 5px;
@@ -393,6 +412,9 @@
         margin-bottom: 5px;
     }
     /*////////////////////////////////////////*/
+    .contact{
+        padding-top: 30px;
+    }
     .contact-head p{
         width: 90%;
         font-size: 18px;

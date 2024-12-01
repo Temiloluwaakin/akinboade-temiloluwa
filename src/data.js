@@ -26,10 +26,10 @@ import admin from './components/images/admin.PNG'
 import lendsqr from './components/images/lendsqr.PNG'
 
 export const Res_Nav_links = [
-    {label: 'Hero', pass: 'hero'},
-    {label: 'About', pass: 'about'},
     {label: 'Work', pass: 'work'},
-    {label: 'Experience', pass: 'experience'},
+    {label: 'About', pass: 'about'},
+    {label: 'Skills', pass: 'skills'},
+    {label: 'Contact', pass: 'contact'},
 ]
 
 
@@ -43,8 +43,8 @@ export const NAV_LINKS = [
       href: 'about',
     },
     {
-      label: 'Experience',
-      href: 'experience',
+      label: 'Skills',
+      href: 'skills',
     },
     {
       label: 'Contact',
@@ -154,49 +154,44 @@ export const TECHNOLOGIES = [
 export const PROJECTS = [
   {
 		name: "School LMS", 
-		description: "A website for a school that show different details and able to receive messages from people",
+		description: "A fully fuctional school LMS for admins and students to help reduce the gap between teachers, parents and the school",
 		url: 'https://school-result.onrender.com/admin/auth',
 		previewImage: admin,
 		technologies: [
 			'React',
-			'Typescript',
 			'React Bootstrap',
-			'Firebase',
+			'MongoDb',
 			'Express.js',
-			'PostgreSQL',
-			'Styled Components',
-			'Redux',
+			'React Query',
+			'Context API',
 		],
 	},
 	{
 		name: "DARUL ATHAR", 
-		description: "A website for a school that show different details and able to receive messages from people",
+		description: "A website for a school that shows important dates and let people have access to upcoming events, programs, and know about the school.",
 		url: 'https://school-website-gold-omega.vercel.app/',
 		previewImage: darul,
 		technologies: [
 			'React',
 			'JavaScript',
 			'React Bootstrap',
-			'Express.js',
-			'MongoDB',
-			'Redux',
-			'context API'
+			'Context API',
+			'Styled Components',
 		],
 	},
 	{
 		name: "Lendsqr", 
-		description: "A website for a school that show different details and able to receive messages from people",
+		description: "An admin dashboard used to monitor spending and loans for the banking industries ",
 		url: 'http://akinboade-temiloluwa-lendsqr-ad6e6fc4a02f.herokuapp.com/',
 		previewImage: lendsqr,
 		technologies: [
 			'React',
 			'Typescript',
 			'React Bootstrap',
-			'Firebase',
 			'Express.js',
-			'PostgreSQL',
-			'Styled Components',
-			'Redux',
+			'Context API',
+			'React query',
+      'Mock Api'
 		],
 	}
 ];

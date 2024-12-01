@@ -51,7 +51,7 @@ const Header = ({scrollToSection}) => {
 
             <div ref={dropdowncaret} className="target-div thedropdown" style={{ display: "none"}}>
                 {Res_Nav_links.map((paser) => (
-                    <div key={paser.label}>
+                    <div key={paser.label} className='res-header'>
                         <span onClick={() => handleClick(paser)}>{paser.label}</span>
                     </div>
                 ))}

@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 
 const Homepage = () => {
 
-    const {heroRef,aboutRef,skillsRef,experienceRef,workRef,contactRef} = useRef(null);
+    const {heroRef,aboutRef,skillsRef,workRef,contactRef} = useRef(null);
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -38,10 +38,6 @@ const Homepage = () => {
 
                 <section id="skills" ref={skillsRef}>
                     <Skills />
-                </section>
-
-                <section id="experience" ref={experienceRef}>
-                    <h1>experience section</h1><br/>
                 </section>
 
                 <section id="contact" ref={contactRef}>
