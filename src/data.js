@@ -182,7 +182,7 @@ export const PROJECTS = [
 	{
 		name: "Lendsqr", 
 		description: "An admin dashboard used to monitor spending and loans for the banking industries ",
-		url: 'http://akinboade-temiloluwa-lendsqr-ad6e6fc4a02f.herokuapp.com/',
+		url: 'https://lendsqr-jet.vercel.app/',
 		previewImage: lendsqr,
 		technologies: [
 			'React',
